@@ -15,14 +15,15 @@
 :root{
     --bg-color: #ffffff;
     --text-color: #334530;
-    --color2: #CDE645;
-    --color3: #804AE9;
+    --color2: #51b32a;
+    --color3: #79ff0a;
     --color4: #3B30DB;
-    --colordes: #20D600;
-    --big-font: 5rem;
+    --colordes: #60d600;
+    --big-font: 4rem;
     --h2-font: 3rem;
     --p-font: 1rem;
 }
+
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -103,6 +104,78 @@ section{
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(http://www.estatisticasegura.com.br/wp-content/uploads/2017/07/BACKGROUND-TOP.jpg);
-
+    background: url(../img/bgimg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;    
 }
+.home-text h1{
+    margin: 10px 0px 25px;
+    font-size: var(--big-font);
+    line-height: 1;
+    font-weight: 800;
+}
+.home-text h5{
+    margin-bottom: 10px 0px 25px;
+    font-size: 19px;
+    font-weight: 500;
+}
+span{
+    color: var(--color2);
+}
+.home-text h3{
+    color: var(--color2);
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text p{
+    font-size: var(--p-font);
+    color: var(--color2);
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.social a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color3);
+    font-size: 17px;
+    color: var(--bg-color);
+    margin-right: 22px;
+    margin-bottom: 30px;
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: var(--color4);
+    transition: 2s;
+}
+.btn{
+    display: inline-block;
+    color: var(--bg-color);
+    background: var(--color2);
+    font-size: var(--p-font);
+    padding: 10px 40px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 30px;
+    transition: ease .40s;
+}
+.btn:hover{
+    transform: scale(1.1); 
+}
+.home-img img{
+    max-width: 100%;
+    width: 540px;
+    height: auto;
+}
+
+
+
+
