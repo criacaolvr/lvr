@@ -447,6 +447,10 @@ header.sticky {
     border-radius: 30px;
     cursor: pointer;
 }
+.contato a{
+    font-weight: bolder;
+    background-color: var(--colordes);
+}
 .ends{
     text-align: center;
     padding: 40px;
