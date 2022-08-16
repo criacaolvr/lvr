@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    padding-left: 10px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    --cor1: rgb(28, 46, 104);
+    --cor2: rgb(51, 76, 156);
+    --boxcor: rgb(199, 219, 219);
+
+}
+header{
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 30px;
+}
+img{
+    padding-top: 30px;
+    max-width: 200px;
+    height: auto;
+}
+h1{
+    color: var(--cor1);
+    margin-right: 30px;
+    font-size: 28px;
+}
+h2{
+    padding-bottom: 30px;
+    color: var(--cor2);
+    margin-right: 30px;
+    font-size: 20px;
+}
+.dados{
+    padding-bottom: 0px;
+}
+.dados > legend{
+    text-align: center;
+}
+.info p{
+    line-height: 1.5em;
+    text-align: justify;
+}
+main{
+    padding: 20px;
+    padding-top: 0px;
+    margin: 20px;
+    margin-top: 0px;
+}
+fieldset{
+    background-color: var(--boxcor);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+legend{
+    font-weight: bolder;
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.objetivos p{
+    text-align: justify;  
+    text-indent: 30px;
+    font-size: .9em;
+}
+span{
+    font-weight: bolder;
+}
+.objetivos > p{
+    text-indent: 30px;
+    text-align: justify;
+}
+.informatica > ul{  
+    columns: 4;
+}
+.informatica > ul >li{
+    padding: 5px;
+}
+
+.historico{
+    text-align: justify;
+}
+.historico > p {
+    padding: 0px 10px 0px 10px;
+    font-size: 0.8em;
+}
+.historico > ul {
+    padding: 10px 10px 0px 10px;
+    font-size: 0.8em;
+    list-style-position: inside;
+}
