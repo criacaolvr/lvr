@@ -347,8 +347,8 @@ header.sticky {
     cursor: pointer;
 }
 .s img{
-    height: 65px;
-    width: 65px;
+    height: 150px;
+    width: 150px;
     background: var(--colordes);
     padding: 15px;
     border-radius: 50%;
