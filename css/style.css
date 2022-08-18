@@ -183,7 +183,7 @@ header.sticky {
 }
 .itens{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
     align-items: center;
     text-align: center;
@@ -195,9 +195,10 @@ header.sticky {
 }
 .sub-img img{
     max-width: 100%;
-    width: 100px;
+    width: 200px;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 .sub-box h3{
     margin-bottom: 20px;
