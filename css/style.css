@@ -427,6 +427,32 @@ header.sticky {
     line-height: 26px;
     margin-bottom: 25px;
 }
+.cta{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 0.7em;
+    border-radius: 10px;
+}
+div.video{
+    max-width: 900px;
+    background-color: black;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    padding-bottom: 50%;
+    position: relative;
+    top: 0;
+}
+div.video >iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+     
+}
 .contato .action form input[type="email"]{
     max-width: 100%;
     width: 200px;
