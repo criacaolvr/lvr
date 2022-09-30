@@ -25,6 +25,7 @@
 }
 
 header{
+    width: 100vw;
     background-color: gray;
 }
 
@@ -36,9 +37,8 @@ header{
     width: 100vw;
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 10px;
-    display: flex;
-    align-items: center;
+    padding: 30px;
+    display: block;
     justify-content: space-around;
     text-align: center;
 }
@@ -51,7 +51,6 @@ header{
 }
 .titulo h1:hover{
     color: lightblue;
-    font-weight: 700;
 }
 
 .titulo h3{
@@ -75,8 +74,8 @@ header{
 }
 
 .btn{
-    display: inline-block;
-    padding: 10px 10px;
+    display: inline-flex;
+    padding: 10px;
     margin-top: 20px;
     text-align: center;
     background-color: var(--color3);
@@ -95,20 +94,17 @@ header{
 }
 
 .menu{
-    width: 100%;
+    width: 100vw;
     display: block;
     text-align: center;
-    grid-template-columns: 1rem 2fr;
     padding-top: 10px;
 }
 #menu-icon{
     display: block;
     text-align: center;
     color: var(--text-color);
-    background-color: gray;
-    margin: -10px;
-    padding: 10px;
     cursor: pointer;
+    padding-top: 10px;
 }
 #menu-icon:hover{
     color:var(--color3);
@@ -121,9 +117,8 @@ header{
 }
 .navlist a{
     display: block;
-    padding: 1.2rem;
-    margin: 1rem;
-    border-right: 2px solid var(--bg-color);
+    padding: 1rem;
+    border-top: 2px solid var(--bg-color);
     color: var(--bg-color);
 }
 .navlist a:hover{
@@ -133,16 +128,16 @@ header{
 }
 .sobre{
     max-width: 80vw;
-    display: flex;
+    display: block;
     position: relative;
-    align-items: center;
     margin: auto;
-    text-align: justify;
+    text-align: center;
     padding-top: 20px;
 }
 .sobre-txt{
     padding: 20px;
     padding-left: 40px;
+    text-align: justify;
 }
 h3{
     color: var(--color2);
@@ -313,4 +308,28 @@ footer p{
     font-size: .7rem;
     letter-spacing: 1px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+.titulo{
+    display: flex;
+    margin-bottom: -10px;
+    align-items: center;
+}
+
+#menu-icon{
+    display: none;
+    }
+.navlist{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navlist a{
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 3px 0;
+}
 }
