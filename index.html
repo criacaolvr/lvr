@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
 
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -21,94 +21,61 @@
 <body>
     <!--------header---->
     <header>
-        <a href="#" class="logo"> <img src="img/logo200pxpng.png" alt="logo"></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="titulo" id="titulo">
+
+            <a href="#" class="foto1" id="foto1"> <img src="img/fotoleandro2.png" alt="foto do designer"></a>
+
+            <div>
+                <h3>PORTFOLIO</h3>
+                <h1>Leandro Vieira Reis</h1>
+                <p>Publicitário, Designer e Artista</p>
+            </div>
+
+            <a href="CURRICULO_Leandro Vieira Reis_23092022.pdf" target="_blank" class="btn">Download Currículo em PDF</a>            
+
+        </div>
+
+        <i id="menu-icon" class="bx bx-menu"  onclick="clickMenu()" ></i>
+
+        <section class="menu" id="menu">           
         
-        <ul class="navlist" id="navlist">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#serviços">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-        <a href="Currículo - Leandro Vieira Reis.pdf" target="_blank" class="top-btn">Download CV</a>
+            <ul class="navlist" id="navlist">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#serviços">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </section>   
+        
+
     </header>
 
-    <!--------home---->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h3>Bem vindo ao portfolio de:
-            </h3>
-            <h1>Leandro Vieira Reis</h1>
-            <h5>Artista e Designer <span>de São José dos Pinhais - PR</span></h5>
-            <p>Site de apresentação do meu trabalho como Artista Plástico, Designer, Músico e Publicitário.</p>
-            <div class="social">
-                <a href="https://leandrovieirareis.github.io/social/index.html" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://leandrovieirareis.github.io/social/index.html" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://leandrovieirareis.github.io/social/index.html" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://leandrovieirareis.github.io/social/index.html" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.link/x1hmfd" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-            </div>
-            <a href="#" class="btn"> Sobre Mim</a>
+    <!--Sobre-->
+    <section class="sobre" id="sobre">
+
+        <div class="sobre-img">
+            <img src="foto3x4semfundo.png" alt="Foto Leandro">
         </div>
 
-        <div class="home-img">
-            <img src="img/fotoleandro3.png" alt="imagem de fundo">
-        </div>       
-      
+        <div class="sobre-txt">
+            <h3> Quem é Leandro? </h3>
+            <h2> Mais que um simples Designer!</h2>
+                <p> Formado em Comunicação Social com Bacharelado em Publicidade e Propaganda desde 2005.</p>
+                <p> Além de músico e artista plástico, com diversos trabalhos. Trabalho a mais de 20 anos no mercado de varejo em grandes empresas.</p>
+                <p>Essa mistura de CRIATIVIDADE e EXPERIÊNCIA são o diferencial para aquele "Approach" com o mercado. Tendo uma visão única e trazendo as melhores soluções e custo benefício! </p>
+            
+            <div class="social">
+                <a class="btn" href="https://www.facebook.com/ApproachMKT" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a class="btn" href="https://www.linkedin.com/in/leandro-vieira-reis-16284432/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a class="btn" href="https://github.com/criacaolvr" target="_blank"><i class='bx bxl-github'></i></a>
+                <a class="btn" href="https://www.instagram.com/agvdapproach/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a class="btn" href="https://wa.link/x1hmfd" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+        
 
     </section>
-
-    <!---sub service-->
-    <section class="sub-service">
-        <div class="itens">
-            
-            <div class="sub-box">
-                <a href="https://www.facebook.com/media/set/?set=a.770428073093056&type=3" target="_blank">
-                    <div class="sub-img">
-                        <img src="img/logo200pxpng.png" alt="Menu1">
-                    </div>
-                </a>
-                <h3>Design de logo</h3>
-                <p>Criação de logomarca com conceitos baseados em análise de perfil psicológico do público alvo aplicando conceitos de linguagem semiótica. </p>
-            </div>
-            
-            <div class="sub-box">
-                <a href="https://www.facebook.com/media/set/?set=a.381381367512602&type=3" target="_blank">
-                    <div class="sub-img">
-                        <img src="img/logo200pxpng.png" alt="Menu2">
-                    </div>
-                </a>
-                <h3>Desgign de Rótulos e Embalagens</h3>
-                <p>Design de rótulos seguindo normas técnicas de acordo com a ABNT e legislações de órgãos regulatórios. </p>
-            </div>
-            
-            <div class="sub-box">
-                <a href="https://www.facebook.com/media/set/?set=a.381381367512602&type=3" target="_blank">
-                    <div class="sub-img">
-                        <img src="img/logo200pxpng.png" alt="Menu1">
-                    </div>
-                </a>
-                <h3>Fotos de Produto</h3>
-                <p>Fotos de produto em alta resolução com tratamento de imagem e croma. Para diversas aplicações. Ex.:(Panfletos, Encartes, Outdoor, Mídias Digitais etc.) </p>
-            </div>
-        </div>
-<!--Sobre-->
-<section class="sobre" id="sobre">
-
-    <div class="sobre-img">
-        <img src="foto3x4semfundo.png" alt="Foto Leandro">
-    </div>
-
-    <div class="sobre-txt">
-        <h3> Quem é Leandro? </h3>
-        <h2> Mais que um simples Designer!</h2>
-        <p> Formado em Comunicação Social com Bacharelado em Publicidade e Propaganda desde 2005. <br> Além de músico e artista plástico, com diversos trabalhos. Trabalhei por 18 anos no mercado de varejo em grandes empresas. <br>
-        Essa mistura de CRIATIVIDADE e EXPERIÊNCIA são o diferencial para aquele "Approach" com o mercado. Tendo uma visão única e trazendo as melhores soluções e custo benefício! </p>
-        <a href="#" class="btn">Sobre Mim</a>
-    </div>
-
-</section>
 
     <!--portfolio-->
     <Section class="portfolio" id="portfolio">
@@ -125,18 +92,18 @@
                     <img src="img/capacd.jpg" alt="imagem">
                     <div class="layer">
                         <a href="https://www.facebook.com/media/set/?set=a.487251158077417&type=3" target="_blank">
-                            <h3>Capas de CD</h3>
+                            <h4>Capas de CD</h4>
                             <h5>Diversos Artistas</h5>
                         </a>
                     </div>
-           
+        
             </div>
             <!--2-->
             <div class="col">
                 <img src="img/fotoproduto.jpg" alt="imagem">
                 <div class="layer">
                     <a href="https://www.facebook.com/media/set/?set=a.343094149188525&type=3" target="_blank">
-                        <h3>Fotos de Produto</h3>
+                        <h4>Fotos de Produto</h4>
                         <h5>ClaraInd</h5>
                     </a>
                 </div>
@@ -146,7 +113,7 @@
                 <img src="img/grartesanal.jpg" alt="imagem">
                 <div class="layer">
                     <a href="https://www.facebook.com/grartesanal/" target="_blank">
-                        <h3>Marca e Produto</h3>
+                        <h4>Marca e Produto</h4>
                         <h5>GR Artesanal</h5>
                     </a>
                 </div>
@@ -156,7 +123,7 @@
                 <img src="img/prtextil.jpg" alt="imagem">
                 <div class="layer">
                     <a href="https://www.facebook.com/Paran%C3%A1-T%C3%AAxtil-990471214299042/" target="_blank">
-                        <h3>Material Gráfico</h3>
+                        <h4>Material Gráfico</h4>
                         <h5>Paraná Textil</h5>
                     </a>
                 </div>
@@ -166,7 +133,7 @@
                 <img src="img/claramaq2.png" alt="imagem">
                 <div class="layer">
                     <a href="https://www.facebook.com/claramaq" target="_blank">
-                        <h3>Consultoria</h3>
+                        <h4>Consultoria</h4>
                         <h5>ClaraMaq</h5>
                     </a>
                 </div>
@@ -176,7 +143,7 @@
                 <img src="img/tonalegre.jpg" alt="imagem">
                 <div class="layer">
                     <a href="https://www.facebook.com/ApproachMKT/photos/pb.100069222262453.-2207520000../1782291591906694/?type=3" target="_blank">
-                        <h3>Comunicação Visual</h3>
+                        <h4>Comunicação Visual</h4>
                         <h5>Ton Alegre</h5>
                     </a>
                 </div>
@@ -184,12 +151,14 @@
 
         </div>
     </Section>
+
     <!--Serviços-->
     <Section class="serviços" id="serviços">
         <div class="heading">
             <h3>Serviços</h3>
             <h2>Oque mais temos a oferecer?</h2>
-            <p>Para mais serviços entre em contato conosco pelo <a href="https://wa.link/x1hmfd" target="_blank">WhatsApp</a>!</p>
+            <p>Para mais serviços entre em contato:</p>
+            <a class="btn" href="https://wa.link/x1hmfd" target="_blank">WhatsApp</a>
         </div>
 
         <div class="service-content">
@@ -197,7 +166,7 @@
                 <div class="s" id="s-one">
                     <img src="img/dinho.jpg" alt="imagem">
                 </div>
-                <h3>Composição de Jingles</h3>
+                <h4>Composição de Jingles</h4>
                 <h5>A partir de: <span>R$100,00</span></h5>
                 <p>Letra e Melodia.</p>
             </div>
@@ -205,36 +174,36 @@
                 <div class="s" id="s-two">
                     <img src="img/sociais.png" alt="imagem">
                 </div>
-                <h3>ADM de Redes Sociais</h3>
-                
+                <h4>ADM de Redes Sociais</h4>
+                <h5>A partir de: <span>R$100,00</span></h5>
                 <p>Ajustes de Perfil e Pacotes de Imagens com Agendamento de Publicação</p>
             </div>
             <div class="row">
                 <div class="s" id="s-three">
                     <img src="img/consultoria.jpg" alt="imagem">
                 </div>
-                <h3>Consultoria e Assessoria</h3>
-                
+                <h4>Consultoria e Assessoria</h4>
+                <h5>A partir de: <span>R$100,00/hora</span></h5>
                 <p>Gestão, Treinamento, Coaching, Startups, Planejamento, Processos e Controles etc.</p>
             </div>
             <div class="row">
                 <div class="s" id="s-four">
                     <a href="https://www.facebook.com/amanda.pavao.188/videos/5543126029038880" target="_blank"><img src="img/videos.png" alt="imagem"></a>
                 </div>
-                <h3>Edição de Vídeos</h3>
+                <h4>Edição de Vídeos</h4>
                 <h5>A partir de: <span>R$100,00</span></h5>
                 <a href="https://www.facebook.com/amanda.pavao.188/videos/5543126029038880" target="_blank">
-                    <p> Vídeos Curtos para Redes Sociais e WhatsApp</p>
+                <p> Vídeos Curtos para Redes Sociais e WhatsApp</p>
                 </a>
             </div>
 
         </div>
     </Section>
-    
+
     <!--Video-->
-    <section class="cta">
-        <p>Assista o vídeo abaixo!</p>
+        
         <div class="video">
+            <p>Assista o vídeo abaixo!</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep1IR-tIryE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
@@ -243,31 +212,42 @@
     <!--Contato-->
     <section class="contato" id="contato">
         <div class="container">
-            <div class="center">
-                <h3>Entre em contato!</h3>
-                <p>Chame no Whatsapp!</p>
-            </div>
-
-            <div class="action">
-                <form>
-
-                </form>
-                <a class="btn" href="https://wa.link/x1hmfd" target="_blank">WhatsApp</a>
-            </div>
+            <h3>Entre em contato!</h3>
+            <a class="btn" href="https://wa.link/x1hmfd" target="_blank">WhatsApp</a>
         </div>
 
 
     </section>
-
-    <!--ends-->
-    <div class="ends">
+<script>
+function clickMenu(){
+    if (navlist.style.display == "block")
+        navlist.style.display = "none"
+    else
+        navlist.style.display = "block"      
+    }
+</script>
+</body>
+<footer>
+      <!--ends-->
+      <div class="ends">
         <p>Site Desenvolvido por Leandro Vieira Reis - ApproachMKT! ⓒ2022</p>
     </div>
+</footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--------Link to js---->
-    <script type="text/javascript" src="js/script.js"></script>
-    
-</body>
-</html>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+const sr = ScrollReveal ({
+    distance: '45px',
+    duration: 1500,
+    reset: true
+})
+
+sr.reveal('.sobre-text', {delay:50, origin:'right'});
+
+sr.reveal('.sobre-img', {delay:50, origin:'left'});
+
+sr.reveal('.sub-service, .sobre, .portfolio, .serviços, .cta, .contato', {delay:200, origin:'bottom'});
+
+</script>
