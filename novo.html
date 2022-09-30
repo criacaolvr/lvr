@@ -34,10 +34,10 @@
             <a href="Currículo - Leandro Vieira Reis_19092022.pdf" target="_blank" class="btn">Download Currículo em PDF</a>            
 
         </div>
-        
-        <section class="menu" id="menu">
 
-            <div class="bx bx-menu" id="menu-icon"></div>
+        <i id="menu-icon" class="bx bx-menu"  onclick="clickMenu()" ></i>
+
+        <section class="menu" id="menu">           
         
             <ul class="navlist" id="navlist">
                 <li><a href="#sobre">Sobre</a></li>
@@ -218,7 +218,14 @@
 
 
     </section>
-
+<script>
+function clickMenu(){
+    if (navlist.style.display == "block")
+        navlist.style.display = "none"
+    else
+        navlist.style.display = "block"      
+    }
+</script>
 </body>
 <footer>
       <!--ends-->
@@ -229,26 +236,8 @@
 
 
 <script src="https://unpkg.com/scrollreveal"></script>
+
 <script>
-
-    const header = document.querySelector("header");
-window.addEventListener("scroll", function() {
-    header.classList.toggle ("sticky", window.scrollY > 0);
-});
-
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector ('.navlist');
-
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navlist.classList.toggle('active');
-};
-
-window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    navlist.classList.remove('active');
-};
-
 const sr = ScrollReveal ({
     distance: '45px',
     duration: 1500,

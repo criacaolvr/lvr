@@ -55,7 +55,7 @@ header{
 }
 
 .titulo h3{
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1rem;
     font-size: 1rem;
     color:var(--color2);
@@ -65,7 +65,7 @@ header{
     color: var(--color4);
 }
 .titulo p{
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 2px;
     color: var(--color3);
     transition: ease 1s;
@@ -96,29 +96,41 @@ header{
 
 .menu{
     width: 100%;
-    display: grid;
+    display: block;
+    text-align: center;
     grid-template-columns: 1rem 2fr;
-    align-items: center;
-    padding: 10px;
+    padding-top: 10px;
 }
-
+#menu-icon{
+    display: block;
+    text-align: center;
+    color: var(--text-color);
+    background-color: gray;
+    margin: -10px;
+    padding: 10px;
+    cursor: pointer;
+}
+#menu-icon:hover{
+    color:var(--color3);
+}
 .navlist{
-    display: flex;
-    justify-content: space-around;
-    font-size: .8rem;
+    display: none;
+    background-color: var(--color3);
+    text-align: center;
+    transition: all .40s;
 }
-
 .navlist a{
-    font-weight: bold;
-    color:var(--text-color);
-    padding: 10px;
-    border-radius: 10px;
+    display: block;
+    padding: 1.2rem;
+    margin: 1rem;
+    border-right: 2px solid var(--bg-color);
+    color: var(--bg-color);
 }
 .navlist a:hover{
-    background-color: var(--color2);
+    background: var(--color2);
+    color: var(--text-color);
+    font-weight: 800;
 }
-
-
 .sobre{
     max-width: 80vw;
     display: flex;
@@ -301,73 +313,4 @@ footer p{
     font-size: .7rem;
     letter-spacing: 1px;
     text-align: center;
-}
-
-
-@media (max-width: 740px) {
-    .sobre{
-        display: block;
-        text-align: center;
-    }
-    .titulo{
-        display: block;
-        padding-bottom: 20px;
-    }
-        
-    }
-
-
-@media (max-width: 580px) {
-.titulo{
-    display: block;
-    padding-bottom: 20px;
-}
-.foto1 img{
-    max-width: 300px;
-}
-
-#menu-icon{
-    position: relative;
-    right: -45vw;
-    display: block;
-}
-
-.navlist{
-    position: absolute;
-    top: -550px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color:var(--color3);
-    text-align: right;
-    transition: all .40s;
-}
-.navlist a{
-    display: block;
-    padding: 1.2rem;
-    margin: 1.5rem;
-    border-right: 2px solid var(--bg-color);
-    color: var(--bg-color);
-}
-.navlist a:hover{
-    background: var(--bg-color);
-    color:var(--color3);
-}
-.navlist a::after{
-    display: none;
-}
-.navlist.active{
-    top: 100%;
-}
-
-.sobre{
-    padding-top: 20px;
-    display: block;
-    text-align: center;
-}
-.sobre h2{
-    font-size: 1.8rem;
-}
-
-    
 }
