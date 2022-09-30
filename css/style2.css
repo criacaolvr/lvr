@@ -332,4 +332,7 @@ footer p{
     padding: 5px 10px;
     margin: 3px 0;
 }
+.sobre{
+    display: flex;
+}
 }
